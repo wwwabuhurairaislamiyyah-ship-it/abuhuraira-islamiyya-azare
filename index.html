@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Abu Huraira Islamiyya | Welcome</title>
+    <style>
+        /* Reset and Base Styles */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        body {
+            line-height: 1.6;
+            color: #333;
+            background-color: #f9f9f9;
+        }
+
+        /* Variables for Islamic Theme Color Palette */
+        :root {
+            --primary-color: #0b5345; /* Deep Islamic Green */
+            --secondary-color: #d4ac0d; /* Warm Gold */
+            --dark-color: #2c3e50;
+            --light-color: #ffffff;
+        }
+
+        /* Header & Navigation */
+        header {
+            background-color: var(--primary-color);
+            color: var(--light-color);
+            padding: 1rem 2rem;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+
+        .nav-container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            max-width: 1100px;
+            margin: 0 auto;
+        }
+
+        .logo {
+            font-size: 1.5rem;
+            font-weight: bold;
+            color: var(--secondary-color);
+        }
+
+        .nav-links {
+            list-style: none;
+            display: flex;
+        }
+
+        .nav-links li {
+            margin-left: 20px;
+        }
+
+        .nav-links a {
+            color: var(--light-color);
+            text-decoration: none;
+            font-weight: 500;
+            transition: color 0.3s;
+        }
+
+        .nav-links a:hover {
+            color: var(--secondary-color);
+        }
+
+        /* Hero Section */
+        .hero {
+            background: linear-gradient(rgba(11, 83, 69, 0.85), rgba(11, 83, 69, 0.85)), url('https://images.unsplash.com/photo-1542838132-92c53300491e?auto=format&fit=crop&q=80&w=1200') no-repeat center center/cover;
+            color: var(--light-color);
+            height: 60vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            padding: 0 2rem;
+        }
+
+        .hero h1 {
+            font-size: 3rem;
+            margin-bottom: 1rem;
+            color: var(--secondary-color);
+        }
+
+        .hero p {
+            font-size: 1.2rem;
+            max-width: 700px;
+            margin-bottom: 2rem;
+        }
+
+        .btn {
+            display: inline-block;
+            background-color: var(--secondary-color);
+            color: #000;
+            padding: 0.7rem 1.5rem;
+            text-decoration: none;
+            border-radius: 5px;
+            font-weight: bold;
+            transition: background 0.3s;
+        }
+
+        .btn:hover {
+            background-color: #b7950b;
+        }
+
+        /* Main Content Container */
+        .container {
+            max-width: 1100px;
+            margin: 2rem auto;
+            padding: 0 1.5rem;
+        }
+
+        section {
+            padding: 3rem 0;
+            border-bottom: 1px solid #e0e0e0;
+        }
+
+        section:last-child {
+            border-bottom: none;
+        }
+
+        h2 {
+            color: var(--primary-color);
+            margin-bottom: 1.5rem;
+            position: relative;
+            padding-bottom: 0.5rem;
+        }
+
+        h2::after {
+            content: '';
+            position: absolute;
+            width: 50px;
+            height: 3px;
+            background-color: var(--secondary-color);
+            bottom: 0;
+            left: 0;
+        }
+
+        /* Programs Grid */
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            margin-top: 1.5rem;
+        }
+
+        .card {
+            background: var(--light-color);
+            padding: 2rem;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+            border-top: 4px solid var(--primary-color);
+        }
+
+        .card h3 {
+            color: var(--primary-color);
+            margin-bottom: 1rem;
+        }
+
+        /* Contact Details */
+        .contact-info {
+            background-color: var(--primary-color);
+            color: var(--light-color);
+            padding: 2rem;
+            border-radius: 8px;
+            margin-top: 1.5rem;
+        }
+
+        .contact-info p {
+            margin-bottom: 0.8rem;
+        }
+
+        /* Footer */
+        footer {
+            background-color: var(--dark-color);
+            color: var(--light-color);
+            text-align: center;
+            padding: 1.5rem;
+            font-size: 0.9rem;
+        }
+
+        /* Responsive Styles for Mobile Devices */
+        @media (max-width: 768px) {
+            .nav-container {
+                flex-direction: column;
+                text-align: center;
+            }
+
+            .nav-links {
+                margin-top: 1rem;
+            }
+
+            .nav-links li {
+                margin: 0 10px;
+            }
+
+            .hero h1 {
+                font-size: 2rem;
+            }
+
+            .hero p {
+                font-size: 1rem;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Header & Navigation -->
+    <header>
+        <div class="nav-container">
+            <div class="logo">Abu Huraira Islamiyya</div>
+            <ul class="nav-links">
+                <li><a href="#about">About</a></li>
+                <li><a href="#programs">Programs</a></li>
+                <li><a href="#admissions">Admissions</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </header>
+
+    <!-- Hero Showcase Section -->
+    <section class="hero">
+        <h1>Nurturing Knowledge & Faith</h1>
+        <p>Welcome to Abu Huraira Islamiyya. We are dedicated to providing sound Islamic education alongside a comprehensive moral upbringing rooted in the Quran and Sunnah.</p>
+        <a href="#admissions" class="btn">Enroll Now</a>
+    </section>
+
+    <div class="container">
+        
+        <!-- About Section -->
+        <section id="about">
+            <h2>About Our School</h2>
+            <p>Abu Huraira Islamiyya is committed to fostering an environment where spiritual growth and educational excellence go hand in hand. Our mission is to guide students to understand their deen, memorize the Noble Quran, and develop excellent character (Akhlaq) that enables them to positively impact the wider world.</p>
+        </section>
+
+        <!-- Programs Section -->
+        <section id="programs">
+            <h2>Our Islamic & Quranic Programs</h2>
+            <div class="grid">
+                <div class="card">
+                    <h3>Hifdh (Quran Memorization)</h3>
+                    <p>A structured and supportive program guiding students through proper Tajweed principles to successfully memorize and preserve the Holy Quran.</p>
+                </div>
+                <div class="card">
+                    <h3>Islamic Studies</h3>
+                    <p>Comprehensive classes covering basic Fiqh (Jurisprudence), Seerah (Prophetic Biography), Hadith, and Islamic History tailored for various age levels.</p>
+                </div>
+                <div class="card">
+                    <h3>Arabic Language</h3>
+                    <p>Focusing on foundational reading, writing, and comprehension skills to help students connect deeply with the language of the Quran.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Admissions Section -->
+        <section id="admissions">
+            <h2>Admissions Information</h2>
+            <p>We welcome students of all ages who are eager to learn and grow in an Islamic environment. Registration for the upcoming academic session is now open.</p>
+            <p style="margin-top: 1rem;"><strong>How to Apply:</strong> Please visit our administrative office during working hours to pick up an admission form, or get in touch with us using the contact details below to learn more about entry requirements and fees.</p>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact">
+            <h2>Contact Us</h2>
+            <p>Have questions? Reach out to our school administration directly. We would love to hear from you.</p>
+            <div class="contact-info">
+                <p>📍 <strong>Address:</strong> School Main Campus, Community Road, [Your City/State]</p>
+                <p>📞 <strong>Phone:</strong> +123 456 7890 / +123 987 6543</p>
+                <p>✉️ <strong>Email:</strong> info@abuhurairaislamiyya.com</p>
+                <p>🕒 <strong>Hours:</strong> Monday - Friday (8:00 AM - 4:00 PM) | Saturday (9:00 AM - 1:00 PM)</p>
+            </div>
+        </section>
+
+    </div>
+
+    <!-- Footer Section -->
+    <footer>
+        <p>&copy; 2026 Abu Huraira Islamiyya. All Rights Reserved.</p>
+    </footer>
+
+</body>
+  </html>
+                                                
